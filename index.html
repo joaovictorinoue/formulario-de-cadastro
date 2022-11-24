@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tyle.css">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="all" id="fpessoas">
-        <form>
-            <label>Nome</label><br>
-            <input type="text" name="txtName"><br><br>
-            <label>Sobrenome</label><br>
-            <input type="text" name="txtSobrenome"><br><br>
-            <label>E-Mail</label><br>
-            <input type="email" name="txtE-Mail"><br><br>
-            <label>Senha</label><br>
-            <input type="password" name="txtSenha"><br><br>
-        </form>
+    <div class="all">
+        Nome: <br><input type="text" id="nome">
+        Sobrenome: <br><input type="text" id="sobrenome">
+        E-Mail: <br><input type="email" id="email">
+        Senha: <br><input type="password" id="senha">
+        <br>
+        <button type="button" onclick="Salvar()">Adicionar Pessoa</button>
 
-    </div><br><br>
-    <div id='tbpessoas'>
+    </div>
+    <div>
         <table>
             <thead>
                 <tr>
                     <td>Nome</td>
                     <td>Sobrenome</td>
-                    <td>E-Mail</td>
-                    <td>Senha</td>
                 </tr>
             </thead>
+            <tbody id="tabela">
+
+            </tbody>
         </table>
     </div>
 
