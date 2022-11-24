@@ -11,10 +11,52 @@
 
 <body>
     <div class="all">
-        Nome: <br><input type="text" id="nome">
-        Sobrenome: <br><input type="text" id="sobrenome">
-        E-Mail: <br><input type="email" id="email">
-        Senha: <br><input type="password" id="senha">
+        <div id="coj">
+            Nome: <input type="text" id="nome">
+            Sobrenome: <input type="text" id="sobrenome">
+        </div>
+        E-Mail: <input type="email" id="email">
+        <div id="idsenha">
+            Senha: <input type="password" id="senha">
+            Confirmar Senha: <input type="password" id="consenha">
+        </div>
+        Data de Nascimento: <input type="date" id="idade">
+        <div id="casa">
+            Endereço: <input type="text" id="endereco">
+            Número: <input type="number" id="numero">
+        </div>
+        <div id="ce">
+            Cidade: <input type="text" id="cidade">
+            <select id="estado">
+                <option value="">AC</option>
+                <option value="">AL</option>
+                <option value="">AP</option>
+                <option value="">AM</option>
+                <option value="">BA</option>
+                <option value="">CE</option>
+                <option value="">DF</option>
+                <option value="">ES</option>
+                <option value="">GO</option>
+                <option value="">MA</option>
+                <option value="">MT</option>
+                <option value="">MS</option>
+                <option value="">MG</option>
+                <option value="">PA</option>
+                <option value="">PB</option>
+                <option value="">PR</option>
+                <option value="">PE</option>
+                <option value="">PI</option>
+                <option value="">RJ</option>
+                <option value="">RN</option>
+                <option value="">RS</option>
+                <option value="">RO</option>
+                <option value="">RR</option>
+                <option value="">SC</option>
+                <option value="">SP</option>
+                <option value="">SE</option>
+                <option value="">TO</option>
+            </select>
+        </div>
         <br>
         <button type="button" onclick="Salvar()">Adicionar Pessoa</button>
 
@@ -25,6 +67,11 @@
                 <tr>
                     <td>Nome</td>
                     <td>Sobrenome</td>
+                    <td>E-Mail</td>
+                    <td>Data de Nascimento</td>
+                    <td>Endereço</td>
+                    <td>Número</td>
+                    <td>Cidade</td>
                 </tr>
             </thead>
             <tbody id="tabela">
